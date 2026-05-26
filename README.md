@@ -1,4 +1,4 @@
-# 🎂 Birthday Pixel
+# 🎂 Birthday Website
 
 A birthday website for someone special. Built with code, powered by feelings.
 
@@ -26,4 +26,4 @@ npm run dev
 
 ---
 
-*made with 💕*
+*made with 💕 and a little bit help from Gemini :)*
