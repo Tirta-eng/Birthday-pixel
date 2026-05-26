@@ -1,80 +1,35 @@
-# 🎂 Birthday Pixel Art — Interactive Experience
+# 🎂 Birthday Pixel
 
-A magical, dreamy, and emotional pixel art birthday website with interactive features.
+Website ucapan ulang tahun pixel art interaktif. Ada kue, tiup lilin, confetti, langit malam — lengkap deh pokoknya.
 
-## ✨ Features
+## Fitur
 
-- **3-Page Story Flow**: Intro → Blow the Candle → Final Message
-- **Pixel Art Birthday Cake**: Hand-drawn in Canvas with animated flame
-- **Blow Detection**: Uses Web Audio API to detect when you blow into your mic
-- **Typed Text Effect**: Emotional messages appear letter by letter
-- **Night Sky**: Twinkling pixel stars with occasional shooting stars
-- **Confetti System**: Pixel-style confetti rain and explosions
-- **Particle Background**: Floating stars, hearts, and sparkles
-- **Cinematic Transitions**: Pixel wipe effect between pages
-- **Synthesized Sound Effects**: No audio file dependencies for SFX
-- **Background Music Player**: Floating aesthetic music control
+- 🎁 Halaman intro → tiup lilin → pesan ucapan
+- 🎨 Kue pixel art yang digambar pake Canvas
+- 🌬️ Deteksi tiupan lewat mic (atau klik aja juga bisa)
+- ⭐ Langit malam + bintang jatuh
+- 🎊 Confetti pixel style
+- 🎵 Background music player
+- ✨ Efek transisi pixel wipe antar halaman
 
-## 🚀 Getting Started
+## Cara Pake
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173)
+Buka `http://localhost:5173` di browser.
 
-## 🎵 Adding Background Music
+## Musik
 
-1. Place your music file at: `public/assets/music/bgm.mp3`
-2. The music player will automatically detect and enable it
-3. Supports any format your browser supports (mp3, ogg, wav)
+Taruh file musik di `public/assets/music/bgm.mp3`, nanti otomatis kepake.
 
-## 📁 Project Structure
+## Kustomisasi
 
-```
-Birthday-pixel/
-├── index.html
-├── public/
-│   └── favicon.svg
-├── assets/
-│   └── music/
-│       └── bgm.mp3          ← Place your music here!
-├── src/
-│   ├── main.js              ← App orchestrator
-│   ├── style.css            ← Global styles & design tokens
-│   ├── pages/
-│   │   ├── intro.js         ← Page 1: Gift intro
-│   │   ├── candle.js        ← Page 2: Blow the candle + cake renderer
-│   │   └── final.js         ← Page 3: Birthday messages
-│   ├── components/
-│   │   └── musicPlayer.js   ← Floating music player
-│   └── utils/
-│       ├── particles.js     ← Background floating particles
-│       ├── confetti.js      ← Confetti system
-│       ├── transition.js    ← Pixel wipe transition
-│       └── sound.js         ← Web Audio API sound effects
-```
+- Ganti pesan ucapan → edit `src/pages/final.js` bagian `MESSAGES`
+- Ganti warna → edit CSS variables di `src/style.css`
 
-## 🎨 Customization
+## Tech Stack
 
-### Change Birthday Messages
-Edit `src/pages/final.js` → `MESSAGES` object at the top.
-
-### Change Colors
-Edit CSS variables in `src/style.css` → `:root` block.
-
-### Change Person's Name
-Add to the `MESSAGES` in `final.js`.
-
-## 🛠️ Built With
-
-- Vite (build tool)
-- Vanilla JavaScript (ES Modules)
-- Web Audio API (mic detection + synth sounds)
-- Canvas API (cake drawing, particles, confetti, night sky)
-- Google Fonts (Press Start 2P, VT323, Nunito)
-
-## 📱 Responsive
-
-Works on mobile and desktop. Microphone permission required for blow detection — tap button fallback provided.
+Vanilla JS + Vite + Canvas API + Web Audio API
