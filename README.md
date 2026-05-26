@@ -1,35 +1,29 @@
 # 🎂 Birthday Pixel
 
-Website ucapan ulang tahun pixel art interaktif. Ada kue, tiup lilin, confetti, langit malam — lengkap deh pokoknya.
+A birthday website for someone special. Built with code, powered by feelings.
 
-## Fitur
+Hey, I don't really know how to say this properly — but you're one of a kind. You make everything around you better just by being there. I hope this new age brings you nothing but good things, the kind you don't even have to ask for. You deserve all of it. 🫶
 
-- 🎁 Halaman intro → tiup lilin → pesan ucapan
-- 🎨 Kue pixel art yang digambar pake Canvas
-- 🌬️ Deteksi tiupan lewat mic (atau klik aja juga bisa)
-- ⭐ Langit malam + bintang jatuh
-- 🎊 Confetti pixel style
-- 🎵 Background music player
-- ✨ Efek transisi pixel wipe antar halaman
+This is just a small website, nothing crazy. But I hope it makes you smile when you open it. Happy Birthday 🎉
 
-## Cara Pake
+---
 
+## About the project
+
+An interactive pixel art birthday experience — there's a cake you can blow out (actually uses your mic, or just click it), confetti, a night sky with shooting stars, and a typed-out birthday message. It's one little journey from start to finish.
+
+**Tech stack:** Vanilla JS, Vite, Canvas API, Web Audio API
+
+**Run locally:**
 ```bash
 npm install
 npm run dev
 ```
 
-Buka `http://localhost:5173` di browser.
+**Change the music:** drop an mp3 at `public/assets/music/bgm.mp3`
 
-## Musik
+**Change the message:** edit `src/pages/final.js` — look for `MESSAGES`
 
-Taruh file musik di `public/assets/music/bgm.mp3`, nanti otomatis kepake.
+---
 
-## Kustomisasi
-
-- Ganti pesan ucapan → edit `src/pages/final.js` bagian `MESSAGES`
-- Ganti warna → edit CSS variables di `src/style.css`
-
-## Tech Stack
-
-Vanilla JS + Vite + Canvas API + Web Audio API
+*made with 💕*
