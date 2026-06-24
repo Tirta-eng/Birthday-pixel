@@ -26,4 +26,4 @@ npm run dev
 
 ---
 
-*made with 💕 and a little bit help from Gemini :)*
+*made with 💕 and a little bit help from Gemini and Claude :)*
